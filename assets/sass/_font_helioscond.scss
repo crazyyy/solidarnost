@@ -1,0 +1,45 @@
+$rb-font-path:        "../fonts" !default;
+
+@font-face {
+  font-family: 'Helios Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: url('#{$rb-font-path}/helioscondregular.eot');
+  src: local('Roboto Condensed Regular'),
+    local('helioscondregular'),
+    url('#{$rb-font-path}/helioscondregular.eot') format('embedded-opentype'),
+    url('#{$rb-font-path}/helioscondregular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Helios Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: url('#{$rb-font-path}/helioscondbold.eot');
+  src: local('Roboto Condensed Regular'),
+    local('helioscondbold'),
+    url('#{$rb-font-path}/helioscondbold.eot') format('embedded-opentype'),
+    url('#{$rb-font-path}/helioscondbold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Helios Condensed';
+  font-style: italic;
+  font-weight: 400;
+  src: url('#{$rb-font-path}/heliosconditalic.eot');
+  src: local('Roboto Condensed Italic'),
+    local('heliosconditalic'),
+    url('#{$rb-font-path}/heliosconditalic.eot') format('embedded-opentype'),
+    url('#{$rb-font-path}/heliosconditalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Helios Condensed';
+  font-style: italic;
+  font-weight: 700;
+  src: url('#{$rb-font-path}/helioscondboldItalic.eot');
+  src: local('Roboto Condensed Bold Italic'),
+    local('helioscondboldItalic'),
+    url('#{$rb-font-path}/helioscondboldItalic.eot') format('embedded-opentype'),
+    url('#{$rb-font-path}/helioscondboldItalic.woff') format('woff');
+}
