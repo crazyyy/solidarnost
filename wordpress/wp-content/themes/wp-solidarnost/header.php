@@ -46,9 +46,9 @@
         <?php wpeHeadNav(); ?>
       </nav><!-- /nav -->
 
-      <div class="header-slider">
-
-      </div><!-- /.header-slider -->
+        <div class="header-slider">
+          <?php echo do_shortcode('[new_royalslider id="1"]'); ?>
+        </div><!-- /.header-slider -->
 
     </div><!-- /.inner -->
   </header><!-- /header -->

@@ -12,6 +12,7 @@
 
 
       <?php the_content(); ?>
+      <?php if(get_field('video')) { echo  get_field('video'); } ?>
 
       <?php edit_post_link(); ?>
 

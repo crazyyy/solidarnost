@@ -240,6 +240,11 @@ article {
   width: 620px;
 
   @extend .clearfix;
+  iframe {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 20px;
+  }
   .cat-title {
     font-size: 24px;
     font-weight: bold;
@@ -375,8 +380,32 @@ aside {
     margin-left: -22px;
     padding: 7px 15px;
 
+    text-transform: uppercase;
+
     color: #fff;
     background-color: $red;
+  }
+  &.widget_last_video {
+    iframe {
+      width: 100%;
+      margin: 0 0 10px;
+    }
+    a {
+      font-size: 18px;
+      color: $gray;
+      text-decoration: none;
+    }
+    li {
+      border-bottom: 1px solid $gray;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+    ul {
+      margin: 0;
+    }
   }
 }
 body {
@@ -402,8 +431,6 @@ body {
       display: none;
     }
     article {
-
-
       width: 100%;
       padding-bottom: 50px;
       .inner-title {
@@ -417,7 +444,6 @@ body {
       background-image: url(../img/full-face.png);
       background-repeat: no-repeat;
       background-position: left bottom;
-
       h4 {
         font-size: 30px;
         font-weight: bold;
@@ -478,12 +504,14 @@ body {
       background-color: $red;
     }
     .block-second {
+      font-size: 18px;
+
       margin-right: -20px;
       margin-left: -20px;
       padding-right: 20px;
-      padding-left: 20px;
       padding-bottom: 150px;
-      font-size: 18px;
+      padding-left: 20px;
+
       background-image: url(../img/block-second.png);
       background-repeat: no-repeat;
       background-position: center bottom;
@@ -517,8 +545,37 @@ body {
     }
   }
 }
+.wpcf7 {
+  td {
+    border: 0;
+    &:first-child {
+      width: 30%;
+    }
+    &:last-child {
+      width: 70%;
+    }
+  }
+}
+.rsUni {
+  background-color: $fourth-background-color !important;
+  .rsOverflow {
+    background-color: $fourth-background-color !important;
+  }
+  .rsBullets {
+    height: 20px !important;
+    padding: 0 !important;
+    .rsNavItem {
+      margin: 0 5px;
 
-
+      cursor: pointer;
+    }
+    .rsNavSelected {
+      span {
+        background-color: $red !important;
+      }
+    }
+  }
+}
 footer {
   height: $footer;
   margin: $footer_margin auto 0;
