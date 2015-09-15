@@ -20,6 +20,10 @@
 <!-- wrapper -->
 <div class="wrapper">
   <header role="banner">
+    <h2 class="site-title">
+      Сергей Владимирович <span class="upper">ПАРАЩЕНКО</span>
+      <span class="desciptor">депутат  Одесского  облсовета</span>
+    </h2><!-- /.site-title -->
     <div class="inner">
 
       <div class="logo">
@@ -33,9 +37,18 @@
         <?php } ?>
       </div><!-- /logo -->
 
+      <form class="search" method="get" action="<?php echo home_url(); ?>" role="search">
+        <input class="search-input" type="search" name="s" placeholder="Поиск">
+        <button class="search-submit fa fa-search" type="submit" role="button"></button>
+      </form><!-- /search -->
+
       <nav class="nav" role="navigation">
         <?php wpeHeadNav(); ?>
       </nav><!-- /nav -->
+
+      <div class="header-slider">
+
+      </div><!-- /.header-slider -->
 
     </div><!-- /.inner -->
   </header><!-- /header -->
